@@ -23,6 +23,7 @@ services:
     volumes:
       - "media_mampf:/private/media"
       - "public:/usr/src/app/public"
+      - "caches:/caches"
 
   worker:
     <<: *mampf
